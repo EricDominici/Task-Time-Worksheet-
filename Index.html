@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculating Task Time</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculating Task Time Worksheet</h1>
+        </header>
+        <form id="taskForm">
+            <div class="form-group">
+                <label for="tm">Most Probable Time (Tm):</label>
+                <input type="number" id="tm" required>
+            </div>
+            <div class="form-group">
+                <label for="to">Optimistic Time (To) in:</label>
+                <input type="number" id="to" required>
+            </div>
+            <div class="form-group">
+                <label for="tp">Pessimistic Time (Tp):</label>
+                <input type="number" id="tp" required>
+            </div>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="results" class="results">
+            <h2>Results</h2>
+            <p id="expectedTime"></p>
+            <p id="deviation"></p>
+            <p id="accuracy68"></p>
+            <p id="accuracy95"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

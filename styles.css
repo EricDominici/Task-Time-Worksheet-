@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #00000b;
+    --secondary-color: #90a7cd;
+    --background-color: #c4d5f8;
+    --font-family: 'Arial', sans-serif;
+    --transition-time: 0.3s;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(231, 15, 15, 0.1);
+    width: 80%;
+    max-width: 500px;
+    animation: fadeIn var(--transition-time) ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background var(--transition-time);
+}
+
+button:hover {
+    background: #cedaf5
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.results h2 {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
